@@ -1,0 +1,43 @@
+/* Dark Theme Specific Styles */
+/* This file is loaded after styles.css to override variables if needed */
+
+/* The dark theme is actually the default, so this file mainly exists */
+/* for structural purposes and potential future enhancements */
+
+/* Additional dark theme refinements can go here */
+
+/* Example: Override specific elements for dark theme */
+body:not(.light-theme) {
+    /* Dark theme is already set as default in styles.css */
+    /* Additional dark-specific tweaks */
+}
+
+/* Example: Enhance certain elements in dark mode */
+body:not(.light-theme) .hero h1 {
+    /* Already styled in styles.css */
+}
+
+/* Example: Dark mode specific animations or effects */
+@media (prefers-color-scheme: dark) {
+    /* Additional preferences for users who prefer dark mode */
+    body:not(.light-theme) {
+        /* Could add subtle animations or effects */
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    .theme-toggle {
+        display: none;
+    }
+    
+    .hero-bg,
+    .floating-icons {
+        display: none !important;
+    }
+}
